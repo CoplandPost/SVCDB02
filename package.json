@@ -1,0 +1,12 @@
+{
+  "name": "svcdb02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker run --name SVCDB02 -d -v ${PWD}/data-storage:/var/lib/postgresql/data -p 9000:5432 postgres"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
