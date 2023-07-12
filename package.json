@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "docker build . --tag svcdb02 && docker run --name svcdb02 --net=coplandpost-network -d -v ${PWD}/data-storage:/var/lib/postgresql/data -p 9000:5432 postgres"
+    "start": "docker build . --tag svcdb02 && docker run --name svcdb02 --net=coplandpost-network -d --name svcdb02 -v ${PWD}/data-storage:/var/lib/postgresql/data -p 9000:5432 svcdb02"
   },
   "keywords": [],
   "author": "",
