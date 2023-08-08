@@ -1,4 +1,4 @@
-FROM postgres:14.2-alpine
+FROM postgres
 
 #Dependencies
 
