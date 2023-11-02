@@ -1,10 +1,10 @@
 {
-  "name": "svcdb02",
+  "name": "newdb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "docker build . --tag svcdb02 && docker run -p 9000:5432 --restart always -d --name svcdb02 --net=coplandpost-network -v ${PWD}/data-storage:/var/lib/postgresql/data  svcdb02"
+    "start": "docker build . --rm --tag newdb && docker run -p 9002:5432 -i --name newdb --net=coplandpost-network -v ${PWD}/data-storage:/var/lib/postgresql/data  newdb"
   },
   "keywords": [],
   "author": "",
